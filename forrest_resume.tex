@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy Inspired - One Page One Column Resume with icons
+% LaTeX Template
+% Version 1.0 (15/10/2020)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Author :
+% Forrest Hsu (https://forresthsu.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% One column icon repo:
+% https://github.com/HForrest/Forrest_Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Hacky space on the first bullet point in Experience.
+% 2. Latex doesn't like how I included graphics, but it's functional.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{forrest-resume-interfont}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{graphicx}
+\graphicspath{{./fonts/img/}}
+
+\usepackage{wrapfig}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\setitemize{leftmargin=*, align=left}
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lastupdated
+%\position{\subsection{Biologic Discovery Co-op}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Forrest}{Hsu\protect\includegraphics[height=9pt]{Link.png}}{\href{mailto:me@forresthsu.com}{me@forresthsu.com} || \href{mailto:forresth@uw.edu}{forresth@uw.edu} || \href{tel:2063665909}{206.366.5909} || \href{https://www.linkedin.com/in/forrest-hsu/}{linkedin.com/in/forrest-hsu/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{2mm}
+\section{\protect\icon{Summary.png} Summary}
+\raggedright
+University of Washington (UW) molecular biology graduate with a passion for synthetic biology. 
+Prior experience with design of experiments (DOE), focused research \& development, and interdisciplinary collaboration in microbiological and molecular biological laboratories.
+Strong communication and technical skills.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\protect\icon{Education.png} Education}
+\sectionsep
+\subsection{University of Washington}
+\descript{Bachelor of Science in Molecular, Cellular, and Developmental Biology, Class of 2021 || GPA 3.3}
+
+\sectionsep
+
+\subsection{Seattle Central College}
+\descript{Associate of Science with a transfer focus, Class of 2019 }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\protect\icon{Experience.png} Experience}
+\runsubsection{Washington iGEM} 
+\descript{|| Seattle, WA }
+\location{Mar 2020 - Present || Officer and Researcher}\\
+\vspace{3pt}
+\italic{UW's premier competitive synthetic biology team}
+\vspace{-5pt}
+\begin{tightemize}
+\item Member of the wet lab, dry lab, and stakeholder engagement team aspects. Extensive literature research, presentations, and expert interviews.
+\item Daily multidisciplinary online collaboration over a variety of productivity software such as Zulip, Notion, and Zoom with an exclusively virtual team. 
+\item Developing experience with synthetic biology, recombinant protein work, and computational biology.
+\end{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Adaptive Symbiotic Technologies}
+\descript{|| Seattle, WA }
+\location{Sep 2018 – May 2020 || New Product Research Biologist}\\
+\vspace{3pt}
+\italic{Microbiology firm that develops endophytic fungi for agricultural use}
+\vspace{-5pt}
+\begin{tightemize}
+\item UW undergraduate research symposium presentation on symbiotic auxin synthesising yeast treatment resulting in increased crop growth.
+\item Developed a partially automated quantitative image analysis workflow using ImageJ scripts and custom hardware that halved data collection time and increased data precision from a 25\% stdev to a 5\% stdev.
+\item Developed an assay to characterize interactions between fungal spores, the seed coat and other seed treatments, then created SOPs for an automated workflow.
+\item Conducted research and development with yeast, filamentous fungi, and plants by independently planning, executing, analyzing, interpreting, and reporting on experimental results. 
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\protect\icon{Skills.png} Skills}
+\location{Microbiological ||}
+PCR, 
+Gel Electrophoresis, 
+Mini Prep, 
+Sterile Technique, 
+Genetic Transformation,
+Antibiotic Screening,
+Optical Microscopy, 
+Fungal Culture, 
+GC-MS, 
+NMR, 
+Machine Shop Operation,  
+General Fabrication \\
+
+\location{Computational \hspace{0pt} ||}
+Programming and data analysis [Python and R],
+Excel, 
+Benchling (ELN),
+ImageJ, 
+Microsoft Office, 
+Latex, 
+Gsuite,
+Rosetta,
+Notion
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Volunteer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\protect\icon{Volunteer.png} Volunteer}
+\sectionsep
+\begin{tightemize}
+    \item \location{Bainbridge Bands Marching Band Instructor || Oct. 2017 - Present}\\
+     \vspace{1pt}
+     \hspace{10pt}
+     \vdescription {After finishing a national tour with a competitive marching band, I felt obligated to share my experience. With my experience, the band has scored higher in competition that it ever has for the last two years, and each year I became a more well rounded instructor both on and off of the field.}
+    \item \location{Savoy Swing Club Dance Organizer || Apr. 2018 - Present}\\
+     \vspace{1pt}
+     \hspace{10pt}
+     \vdescription{Through dedication, data collection, and analytics, turned the organization around by converting a loss of \$186/event to a profit of \$105/event. Awarded the prestigious title of 3rd most fun dancer, frequent trombonist at dance events, and a community liaison.}
+    \item \location{The m9 Section Leader || Mar. 2018 - Present}\\
+     \vspace{1pt}
+     \hspace{10pt}
+     \vdescription{Seattle based Balkan Romani Brass Band. While focused on social justice, anti-nationalism, and bringing awareness to the Romani culture, we are not above bar-crashing and leading an impromptu parade around the city.}
+    
+\end{tightemize}
+
+\end{document}  \documentclass[]{article}
+
