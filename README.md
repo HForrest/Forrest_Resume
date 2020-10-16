@@ -24,7 +24,7 @@ I wanted a prettier Deedy resume.
 2. Latex doesn't like how I included graphics, but it's functional.
 
 ## License
-    Copyright 2014 Debarghya Das
+    Copyright 2020 Forrest Hsu
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
