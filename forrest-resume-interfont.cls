@@ -12,10 +12,6 @@
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 
-% Publications
-\usepackage{cite}
-\renewcommand\refname{\vskip -1.5cm}
-
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{date}{HTML}{000000} 
@@ -92,15 +88,20 @@ Last Updated \today
 
 %Italics
 \newcommand{\italic}[1]{
-    \vspace{1pt}
-    \color{subheadings} \raggedright\fontspec[Path = fonts/inter/]{Inter-LightItalic}\fontsize{10pt}{10pt}\selectfont {#1} \sectionsep \normalfont
+    \vspace{3pt}
+    \color{subheadings} \raggedright\fontspec[Path = fonts/inter/]{Inter-LightItalic}\fontsize{10pt}{10pt}\selectfont {#1} 
+    \normalfont
 }
 
 %Position
 \newcommand{\position}[1]{
-\begin{textblock}{60}(7,5)
+\begin{textblock}{50}(5,5)
+\noindent
+\color{subheadings}\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase
 {#1}
+
 \end{textblock}
+
 \normalfont
 }
 
