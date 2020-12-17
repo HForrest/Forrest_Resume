@@ -2,9 +2,6 @@ Deedy-Resume
 =========================
 
 A **one-page**, **one column** resume template in **XeTeX** that caters particularly to an **undergraduate Life Science** student.
-As of **v1.0**, there is an option to choose from two templates:
-
-1. **InterFonts** - uses the standard Notion font, Inter.
 
 It is licensed under the Apache License 2.0.
 
@@ -20,8 +17,7 @@ I wanted a prettier Deedy resume.
 
 ## Known Issues:
 
-1. Hacky space on the first bullet point in Experience.
-2. Latex doesn't like how I included graphics, but it's functional.
+1. Graphics put up soft errors that don't impede compilation.
 
 ## License
     Copyright 2020 Forrest Hsu
