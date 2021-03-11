@@ -30,7 +30,7 @@
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
+\newcommand{\lastupdated}{\begin{textblock}{60}(160,5)
 \color{date}\fontspec[Path = fonts/inter/]{Inter-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
 Last Updated \today
 \end{textblock}}
@@ -61,21 +61,21 @@ Last Updated \today
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/inter/]{Inter-Light}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/inter/]{Inter-Light}\fontsize{18pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
 \color{subheadings}\raggedright\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \hspace{-5pt}\normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/inter/]{Inter-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
-% Location command
-\newcommand{\location}[1]{
+% Subheading command
+\newcommand{\subheading}[1]{
 \color{headings}\raggedright\fontspec[Path = fonts/inter/]{Inter-Medium}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
 % Bullet Lists with fewer gaps command
@@ -83,8 +83,9 @@ Last Updated \today
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
-%Icons for section 
-\newcommand{\icon}[1]{\includegraphics[height=16pt]{#1}}%
+%Images
+\newcommand{\link}[0]{\protect\includegraphics[height=9pt]{Link.png}}
+\newcommand{\icon}[1]{\protect\includegraphics[height=16pt]{#1}}%
 
 %Italics
 \newcommand{\italic}[1]{
