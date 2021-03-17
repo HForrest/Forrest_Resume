@@ -37,7 +37,6 @@ Last Updated \today
 
 % Name command
 \newcommand{\namesection}[3]{
-
 \color{primary}
 \centering{
 \href{https://www.forresthsu.com}{{}
@@ -46,12 +45,13 @@ Last Updated \today
 \fontspec[Path = fonts/inter/]{Inter-ExtraLight}\selectfont #2
 }} \\[5pt]
 \centering{
-\color{subheadings}
-\fontspec[Path = fonts/inter/]{Inter-Light}\fontsize{11pt}{14pt}\selectfont #3}
+	\color{subheadings}
+	\fontspec[Path = fonts/inter/]{Inter-Light}\fontsize{11pt}{14pt}\selectfont #3
+}
 \noindent\makebox[\linewidth]{\color{black}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
-
 }
+
 
 % Section seperators 
 \usepackage{titlesec}
@@ -85,7 +85,7 @@ Last Updated \today
 
 %Images
 \newcommand{\link}[0]{\protect\includegraphics[height=9pt]{Link.png}}
-\newcommand{\icon}[1]{\protect\includegraphics[height=16pt]{#1}}%
+\newcommand{\icon}[1]{\protect\includegraphics[height=16pt]{#1}}
 
 %Italics
 \newcommand{\italic}[1]{
