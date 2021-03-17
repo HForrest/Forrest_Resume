@@ -1,7 +1,7 @@
-Deedy-Resume
+Forrest-Resume
 =========================
 
-A **one-page**, **one column** resume template in **XeTeX** that caters particularly to an **undergraduate Life Science** student.
+A **one-page**, **one column** resume template in **XeLaTeX** based off of the Deedy-Resume.
 
 It is licensed under the Apache License 2.0.
 
@@ -12,8 +12,7 @@ I wanted a prettier Deedy resume.
 
 ## Dependencies
 
-1. Compiles only with **XeTeX**
-
+1. **XeLaTeX**
 
 ## Known Issues:
 
