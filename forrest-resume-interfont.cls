@@ -19,6 +19,7 @@
 \definecolor{headings}{HTML}{000000}
 \definecolor{subheadings}{HTML}{333333}
 \definecolor{black}{HTML}{000000}
+\definecolor{sep}{HTML}{888888}
 
 % Set main fonts
 \usepackage{fontspec}
@@ -57,7 +58,8 @@ Last Updated \today
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\newcommand{\linesep}{\makebox[\linewidth]{\color{sep}\rule{7.5in}{0.4pt}}}
+\newcommand{\spacesep}{\vspace{8pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
