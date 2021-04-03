@@ -7,7 +7,7 @@ It is licensed under the Apache License 2.0.
 
 ## Motivation
 
-I wanted a prettier Deedy resume.
+I wanted a prettier Deedy resume that included icons from Icon8 (aquired without attribuiton 
 
 
 ## Dependencies
