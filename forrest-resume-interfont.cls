@@ -58,15 +58,15 @@ Last Updated \today
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\linesep}{\makebox[\linewidth]{\color{sep}\rule{7.5in}{0.4pt}}}
-\newcommand{\spacesep}{\vspace{8pt}}
+\newcommand{\spacesep}{\vspace{4pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
 \scshape\fontspec[Path = fonts/inter/]{Inter-Light}\fontsize{18pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
-% Subeadings command
+% Subsection command
 \titleformat{\subsection}{
-\color{subheadings}\raggedright\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\raggedright\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{11pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{
 \color{subheadings}\fontspec[Path = fonts/inter/]{Inter-Bold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \hspace{-5pt}\normalfont}
